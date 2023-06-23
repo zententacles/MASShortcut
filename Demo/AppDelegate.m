@@ -22,7 +22,7 @@ static void *MASObservingContext = &MASObservingContext;
 
 	// Most apps need default shortcut, delete these lines if this is not your case
 	MASShortcut *firstLaunchShortcut = [MASShortcut shortcutWithKeyCode:kVK_F1 modifierFlags:NSEventModifierFlagCommand];
-	NSData *firstLaunchShortcutData = [NSKeyedArchiver archivedDataWithRootObject:firstLaunchShortcut];
+	NSData *firstLaunchShortcutData = [NSKeyedArchiver archivedDataWithRootObject:firstLaunchShortcut requiringSecureCoding:true error:nil];
 
     // Register default values to be used for the first app start
     [defaults registerDefaults:@{

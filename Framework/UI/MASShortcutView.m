@@ -414,6 +414,7 @@ void *kUserDataHint = &kUserDataHint;
     _hintToolTipTag = [self addToolTipRect:hintRect owner:self userData:kUserDataHint];
 }
 
+/*
 - (NSString *)view:(NSView *)view stringForToolTip:(NSToolTipTag)tag point:(CGPoint)point userData:(void *)data
 {
     if (data == kUserDataShortcut) {
@@ -424,6 +425,7 @@ void *kUserDataHint = &kUserDataHint;
     }
     return @"";
 }
+ */
 
 #pragma mark - Event monitoring
 
