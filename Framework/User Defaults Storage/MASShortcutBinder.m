@@ -16,7 +16,7 @@
     [self setActions:[NSMutableDictionary dictionary]];
     [self setShortcuts:[NSMutableDictionary dictionary]];
     [self setShortcutMonitor:[MASShortcutMonitor sharedMonitor]];
-    [self setBindingOptions:@{NSValueTransformerNameBindingOption: NSSecureUnarchiveFromDataTransformerName}];
+    [self setBindingOptions:@{NSValueTransformerNameBindingOption: NSUnarchiveFromDataTransformerName}];
     return self;
 }
 
